@@ -14,8 +14,8 @@ async function getAllRoles() {
     return result.rows;
 }
 
-async function addRole(title, salary, departmentId) {
-    await client.query('INSERT INTO role (title, salary, department_id) VALUES ($1, $2, $3)', [title, salary, departmentID]);
+async function addRole(title, salary, department_id) {
+    await client.query('INSERT INTO role (title, salary, department_id) VALUES ($1, $2, $3)', [title, salary, department_id]);
 }
 
 async function getAllEmployees() {
@@ -23,8 +23,8 @@ async function getAllEmployees() {
     return result.rows;
 }
 
-async function addEmployee(firstName, lastName, roleId, managerId) {
-    await client.query('INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3)', [firstName, lastName, roleId, managerId]);
+async function addEmployee(first_name, last_name, role_id, manager_id) {
+    await client.query('INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ($1, $2, $3)', [first_name, last_name, role_id, manager_id]);
 }
 
 module.exports = {

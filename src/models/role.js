@@ -1,13 +1,20 @@
-const client = require('../db');
+const { Client } = require('pg');
 
 class Role {
-    async getAll() {
-        const result = await client.query('SELECT * FROM role');
-        return result.rows;
+    constructor() {
+        this.client = new Client({
+            connectionString: process.env.DATABASE_URL,
+        });
+        this.client.connnet();
     }
 
-    async add(title, salary, departmentId) {
-        await client.query('INSERT INTO role (title, salary, department_id) VALUES ($1, $2, $3)', [title, salary, departmentId]);
+    async getAll() {
+        const res = await this.client.query('SELECT * FROM role');
+        return res.rows;
+    }
+
+    async add(title, salary, department_id) {
+        const res = await this.client.query('INSERT INTO role (title, salary, department_id) VALUES ($1, $2, $3)', [title, salary, department_id]);
     }
 }
 

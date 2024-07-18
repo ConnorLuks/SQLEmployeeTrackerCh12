@@ -51,12 +51,12 @@ async function mainMenu() {
           message: 'Enter the salary of the role:'
         },
         {
-          name: 'departmentId',
+          name: 'department_id',
           type: 'input',
           message: 'Enter the department ID for the role:'
         }
       ]);
-      await role.add(roleDetails.title, roleDetails.salary, roleDetails.departmentId);
+      await role.add(roleDetails.title, roleDetails.salary, roleDetails.department_id);
       console.log(`Role '${roleDetails.title}' added successfully.`);
       break;
     case 'View all employees':
@@ -67,28 +67,28 @@ async function mainMenu() {
     case 'Add an employee':
       const employeeDetails = await inquirer.prompt([
         {
-          name: 'firstName',
+          name: 'first_name',
           type: 'input',
           message: 'Enter the first name of the employee:'
         },
         {
-          name: 'lastName',
+          name: 'last_name',
           type: 'input',
           message: 'Enter the last name of the employee:'
         },
         {
-          name: 'roleId',
+          name: 'role_id',
           type: 'input',
           message: 'Enter the role ID for the employee:'
         },
         {
-          name: 'managerId',
+          name: 'manager_id',
           type: 'input',
           message: 'Enter the manager ID for the employee (optional):'
         }
       ]);
-      await employee.add(employeeDetails.firstName, employeeDetails.lastName, employeeDetails.roleId, employeeDetails.managerId);
-      console.log(`Employee '${employeeDetails.firstName} ${employeeDetails.lastName}' added successfully.`);
+      await employee.add(employeeDetails.first_name, employeeDetails.last_name, employeeDetails.role_id, employeeDetails.manager_id);
+      console.log(`Employee '${employeeDetails.first_name} ${employeeDetails.last_name}' added successfully.`);
       break;
     case 'Exit':
       console.log('Exiting application...');
