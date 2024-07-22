@@ -6,8 +6,6 @@ const client = new Client({
 });
 
 client.connect()
-.then(() => {
-  console.log('Connected to the database successfully!');
-  return client.end();
-})
-.catch(err => console.error('Connection  error', err.stack));
+.then(() => console.log('Connected to datase'))
+.catch(err => console.error('Connection error:', err))
+.finally(() => client.end());
