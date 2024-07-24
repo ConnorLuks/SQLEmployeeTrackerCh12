@@ -37,6 +37,7 @@ INSERT INTO department (name) VALUES ('Marketing');
 INSERT INTO department (name) VALUES ('IT');
 INSERT INTO department (name) VALUES ('Public Relations');
 INSERT INTO department (name) VALUES ('Distribution');
+INSERT INTO department (name) VALUES ('Linguistics');
 
 -- Insert Roles
 INSERT INTO role (title, salary, department_id) VALUES ('Graphics', 50000, 1);
@@ -45,11 +46,15 @@ INSERT INTO role (title, salary, department_id) VALUES ('Analysis', 60000, 3);
 INSERT INTO role (title, salary, department_id) VALUES ('Senior IT Specialist', 85000, 4);
 INSERT INTO role (title, salary, department_id) VALUES ('Public Relations Manager', 45000, 5);
 INSERT INTO role (title, salary, department_id) VALUES ('Lead Warehouse Controller', 60000, 6);
+INSERT INTO role (title, salary, department_id) VALUES ('Translator', 50000, 7);
 
 -- Insert Employees
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Connor', 'Jameson', 1, John Anderson);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Connor', 'Jameson', 1, NULL);
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Zack', 'OBrian', 2, 1);
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Emily', 'Marion', 3, NULL);
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'James', 2, NULL);
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Stan', 'Smith', 3, NULL);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'Anderson', 3, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'Anderson', 6, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Mark', 'Arlo', 4, 2);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Shannon', 'Lambert', 7, NULL);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Camie', 'Brooks', 5, 1);
