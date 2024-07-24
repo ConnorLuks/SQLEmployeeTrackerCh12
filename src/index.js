@@ -62,7 +62,8 @@ async function mainMenu() {
       await viewEmployees();
       break;
     case 'Exit':
-      db.client.end();
+      console.log('Goodbye');
+      await db.client.end();
       process.exit();
   }
 
@@ -149,4 +150,7 @@ async function viewEmployees() {
 }
 
 // Start the application
-mainMenu();
+mainMenu().catch((error) => {
+  console.error(error);
+  db.client.end();
+});
