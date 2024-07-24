@@ -52,4 +52,4 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Zack'
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Emily', 'Marion', 3, NULL);
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'James', 2, NULL);
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Stan', 'Smith', 3, NULL);
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'Anderson', 3, NULL);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('John', 'Anderson', 3, 1);
