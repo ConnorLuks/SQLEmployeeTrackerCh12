@@ -15,7 +15,7 @@ A SQL employee database, using PostGreSQL for the database. enter 'npm start' to
 # Installation/How to use
 - 1: Clone the repository to your pc or local machine.
 - 2: Open the directory in the terminal.
-- 3: Run using npm install to allow the correct dependencies to be added in order to run.
+- 3: Run using npm install to allow the correct dependencies to be added in order to run. and npm inquirer.
 - 4: Connect your PostgreSQL database to the repository by entering the your own URL into the .env file
 - 5: Run by entering npm start, in the terminal.
 - 6: Proceed by filling out the prompted information to add new employee's, salaries, job titles etc to the database.
