@@ -2,8 +2,8 @@
 A SQL based Employee Tracker program
 
 # Table of Contents
-- [Introduction and Usage](#introduction and usage)
-- [Installation/How to use](#installation/how to use)
+- [Introduction and Usage](#introduction_and_usage)
+- [Installation and How to use](#installation_and_how_to_use)
 - [Links](#links)
 - [Photos](#photos)
 - [License](#license)
