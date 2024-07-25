@@ -2,13 +2,12 @@
 A SQL based Employee Tracker program
 
 # Table of Contents
-- Introduction and Usage(#introduction and usage)
-- Installation/How to use(#installation/How to use.)
-- How to use(#how to use)
-- Links(#links)
-- Photos(#photos)
-- License(#license)
-- Credits(#credits)
+- [Introduction and Usage](#introduction and usage)
+- [Installation/How to use](#installation/how to use)
+- [Links](#links)
+- [Photos](#photos)
+- [License](#license)
+- [Credits](#credits)
 
 # Introduction and Usage
 A SQL employee database, using PostGreSQL for the database. enter 'npm start' to begin the Node console to allow editing and viewing of the Employee Database.
